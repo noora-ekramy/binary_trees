@@ -74,4 +74,10 @@ bst_t *array_to_bst(int *array, size_t size);
 bst_t *bst_search(const bst_t *tree, int value);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
+void heapify_down(heap_t *heap);
+heap_t *heap_r(heap_t *new, heap_t *parent);
+heap_t *heap_nf(heap_t *root, size_t number);
+size_t bts(const binary_tree_t *tree);
+heap_t *heap_insert(heap_t **tree, int value);
+heap_t *array_to_heap(int *array, size_t size);
 #endif /* _BINARY_TREES_H_ */

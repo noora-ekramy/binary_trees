@@ -87,4 +87,7 @@ void free_q(link_t *head);
 void _push(binary_tree_t *node, link_t *head, link_t **tail);
 void _pop(link_t **head);
 int binary_tree_is_complete(const binary_tree_t *tree);
+int check_sub_tree_Left(const binary_tree_t *node, int max);
+int check_sub_tree_Right(const binary_tree_t *node, int min);
+int binary_tree_is_bst(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */

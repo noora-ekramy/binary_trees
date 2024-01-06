@@ -90,4 +90,8 @@ int binary_tree_is_complete(const binary_tree_t *tree);
 int check_sub_tree_Left(const binary_tree_t *node, int max);
 int check_sub_tree_Right(const binary_tree_t *node, int min);
 int binary_tree_is_bst(const binary_tree_t *tree);
+int successor(bst_t *node);
+int two_children(bst_t *root);
+int remove_type(bst_t *root);
+bst_t *bst_remove(bst_t *root, int value);
 #endif /* _BINARY_TREES_H_ */

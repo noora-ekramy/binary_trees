@@ -80,4 +80,11 @@ heap_t *heap_nf(heap_t *root, size_t number);
 size_t bts(const binary_tree_t *tree);
 heap_t *heap_insert(heap_t **tree, int value);
 heap_t *array_to_heap(int *array, size_t size);
+void linked_node(link_t **head, const binary_tree_t *tree, size_t level);
+void recursion(link_t **head, const binary_tree_t *tree);
+link_t *new_node(binary_tree_t *node);
+void free_q(link_t *head);
+void _push(binary_tree_t *node, link_t *head, link_t **tail);
+void _pop(link_t **head);
+int binary_tree_is_complete(const binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */

@@ -94,4 +94,14 @@ int successor(bst_t *node);
 int two_children(bst_t *root);
 int remove_type(bst_t *root);
 bst_t *bst_remove(bst_t *root, int value);
+size_t binary_tree_height(const binary_tree_t *tree);
+int bal_avl(const binary_tree_t *tree, int lower, int high);
+int binary_tree_is_avl(const binary_tree_t *tree);
+avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval);
+avl_t *avl_insert(avl_t **tree, int value);
+avl_t *array_to_avl(int *array, size_t size);
+void bal(avl_t **tree);
+avl_t *avl_remove(avl_t *root, int value);
+avl_t *sorted_array_to_avl(int *array, size_t size);
+avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
 #endif /* _BINARY_TREES_H_ */
